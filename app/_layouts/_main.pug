@@ -1,0 +1,49 @@
+//- include /_mixins/_social-list.pug
+
+block globalsVars
+  -
+    const siteName = 'Seed Global Health';
+    const siteUrl = 'https://seedgh.netlify.com/';
+    const themeColor = '#104c91';
+    const socialLinks = {
+      'Facebook': 'https://www.facebook.com/pages/Seed-Global-Health/134762913240516',
+      'Twitter': 'http://twitter.com/Seed_Global',
+      'Instagram': 'https://www.instagram.com/seedglobalhealth/',
+      'YouTube': null,
+      'Pinterest': null,
+      'Linkedin' : 'https://www.linkedin.com/company/seed-global-health/'
+    };
+
+block canonicalUrl
+  - const canonicalUrl = siteUrl;
+
+block metaVars
+  -
+    const meta = {
+      pageTitle: '2020 International Year of the Nurse and Midwife',
+      description: 'Nurses and midwives are leaders, navigators, innovators, and advocates. They are the backbone of health systems and on the frontlines of providing care to communities. Join us in celebrating nurses and midwives in 2020',
+      image: null
+    };
+
+block bodyClass
+  - const bodyClass = ''
+
+block indexPage
+  - const isHomePage = null;
+
+doctype html
+html(language='en')
+  include /_includes/_html-header.pug
+
+  body(class=bodyClass)
+    include /_mixins/mixins.pug
+    #svg-sprites.svg-sprites
+      include /_includes/svg-sprites.svg
+    include /_includes/_header.pug     
+    block precontent
+      main#main
+        block content
+    //- include /_includes/_footer.pug
+    block postcontent
+
+    script(src='/scripts/main.js')

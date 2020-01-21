@@ -1,0 +1,23 @@
+/**
+ *  SEED 2020 International Year of the Nurse and Midwife
+ */
+
+// Global Variables
+@import 'constants/colors';
+@import 'constants/typography';
+@import 'constants/layout';
+
+// Layout 
+@import 'layout/footer';
+@import 'layout/global';
+@import 'layout/header';
+@import 'layout/splash';
+
+// Atoms
+@import 'atoms/icons';
+@import 'atoms/buttons';
+@import 'atoms/typography';
+@import 'atoms/media';
+
+// Components
+@import 'components/form';

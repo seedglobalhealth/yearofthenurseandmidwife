@@ -1,0 +1,8 @@
+mixin social-links(links)
+  each val, key in links
+    if val
+      a(class=`social-icon social-icon-${key.toLowerCase()}` target='_blank' href=val)
+        span.fa-stack
+          span.fa.fa-circle.fa-stack-2x
+          span(class=`fa-${key.toLowerCase()}`).fa.fa-stack-1x
+            span.sr-only key

@@ -1,0 +1,60 @@
+//*------------------------------------*\
+//    TYPE STYLES
+//*------------------------------------*/
+
+::selection {
+  background: $color-blue;
+  color: $color-white;
+}
+
+hr {
+  background: $color-light-gray;
+  border: none;
+  height: 1px;
+  margin: 40px 0;
+}
+
+a {
+  border-bottom: 2px solid;
+  color: $color-blue;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color .25s ease;
+
+  &:hover,
+  &:focus {
+    color: $color-teal;
+  }
+}
+
+strong {
+  font-family: $sansBold;
+}
+
+ol,
+ul {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 18px;
+  letter-spacing: -.1px;
+  line-height: 1.44;
+  margin: 0 0 20px;
+}
+
+h2 {
+  font-family: $sansBold;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: -.12px;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.emphasis {
+  font-family: $sansItalic;
+}

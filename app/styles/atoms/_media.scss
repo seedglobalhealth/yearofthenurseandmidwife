@@ -1,0 +1,44 @@
+// Media
+img {
+  max-width: 100%;
+}
+
+figure,
+.image-block,
+.media-embed {
+  margin: 30px auto 45px;
+
+  @media (min-width: $screen-sm) {
+    margin: 60px auto 75px;
+  }
+
+  figcaption {
+    color: $color-gray;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1.5;
+
+    @media (min-width: $screen-md) {
+      margin: 5px auto 10px;
+    }
+  }
+}
+
+.responsive-embed {
+  height: 0;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+
+  iframe,
+  embed,
+  video {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}

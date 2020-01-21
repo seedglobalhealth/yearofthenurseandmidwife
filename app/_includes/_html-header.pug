@@ -1,0 +1,29 @@
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  //- base(href='https://seedgh.netlify.com/')
+  title #{siteName} | #{meta.pageTitle}
+  meta(content=meta.pageTitle, property='og:title')
+  meta(content=siteName, property='og:site_name')
+  meta(content=meta.description, property='og:description')
+  meta(content=meta.image, property='og:image')
+  meta(content=canonicalUrl, property='og:url')
+  link(rel='canonical', href=canonicalUrl)
+
+  link(rel='shortcut icon', href='favicon.png')
+
+  // Disable tap highlight on IE
+  meta(name='msapplication-tap-highlight', content='no')
+
+  // Web Application Manifest
+  link(rel='manifest', href='/manifest.json')
+
+  // Color the status bar on mobile devices
+  meta(name='theme-color', content=themeColor)
+
+  // vendor styles
+  link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css")
+
+  // Custom styles
+  link(href='/styles/theme.css', rel='stylesheet', type='text/css')

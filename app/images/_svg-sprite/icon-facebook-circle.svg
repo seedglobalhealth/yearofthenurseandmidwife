@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer/condensed_blue" transform="translate(-248.000000, -310.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-4" transform="translate(248.000000, 310.000000)">
+                <path d="M16.5,0 C7.3612,0 0,7.3612 0,16.5 C0,25.6388 7.3612,33 16.5,33 C25.6388,33 33,25.6388 33,16.5 C33,7.3612 25.6388,0 16.5,0 Z M22.7194,9.5194 L19.1653,9.5194 C18.7847,9.5194 18.2765,10.0276 18.2765,10.7888 L18.2765,13.0735 L22.7183,13.0735 L22.7183,17.3888 L18.2765,17.3888 L18.2765,27.797 L13.8347,27.797 L13.8347,17.3888 L10.2806,17.3888 L10.2806,13.0735 L13.8347,13.0735 L13.8347,10.7888 C13.8347,7.6153 16.2459,5.0776 19.1653,5.0776 L22.7194,5.0776 L22.7194,9.5194 Z" id="Shape" style="fill: currentColor;"></path>
+            </g>
+        </g>
+    </g>
+</svg>

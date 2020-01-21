@@ -1,0 +1,17 @@
+.site-footer {
+  background: #121522;
+  color: #fff;
+  font-size: 14px;
+  padding: 30px 20px;
+  position: relative;
+  text-align: center;
+
+  a {
+    color: rgba($color-white, .8);
+
+    &:hover,
+    &:focus {
+      color: $color-teal;
+    }
+  }
+}

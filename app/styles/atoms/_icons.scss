@@ -1,0 +1,82 @@
+.svg-sprites {
+  display: none;
+}
+
+a.social-icon {
+  background-color: $color-black;
+  border-radius: 50%;
+  color: $color-white;
+  display: inline-block;
+  font-size: 18px;
+  height: 35px;
+  margin: 0 10px 10px 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 35px;
+
+  @media (min-width: $screen-md) {
+    font-size: 22px;
+    height: 43px;
+    width: 43px;
+  }
+
+  &:last-of-type {
+    margin: 0;
+  }
+
+  .fa {
+    display: block;
+    transform: translateY(50%);
+  }
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  height: 2rem;
+  opacity: .85;
+  position: relative;
+  width: 2.18rem;
+
+  > span {
+    &,
+    &::before,
+    &::after {
+      background-color: $color-black;
+      display: block;
+      height: 1px;
+      width: 1rem;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+    }
+
+    &::before {
+      top: .35rem;
+    }
+
+    &::after {
+      bottom: .35rem;
+    }
+  }
+
+  > span {
+    left: .55rem;
+    position: absolute;
+    top: 1rem;
+    transition-duration: .1s;
+    transition-timing-function: cubic-bezier(.55, .055, .675, .19);
+  }
+}
+
+.icon-text {
+  left: -999em;
+  position: absolute;
+  top: -999em;
+}

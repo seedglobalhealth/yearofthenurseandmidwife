@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'CooperHewittMedium';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url('../fonts/CooperHewitt-Medium.woff2') format('woff2'),
+    url('../fonts/CooperHewitt-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CooperHewittMediumItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/CooperHewitt-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CooperHewittSemiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/CooperHewitt-Semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CooperHewittBold';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url('../fonts/CooperHewitt-Bold.woff2') format('woff2'),
+    url('../fonts/CooperHewitt-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CooperHewittBoldItalic';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url('../fonts/CooperHewitt-BoldItalic.woff2') format('woff2'),
+    url('../fonts/CooperHewitt-BoldItalic.woff') format('woff');
+}
+
+$type-sans: 'CooperHewittMedium', Arial, sans-serif;
+
+$sansItalic: 'CooperHewittMediumItalic', $type-sans;
+
+$sansSemiBold: 'CooperHewittSemiBold', $type-sans;
+
+$sansBold: 'CooperHewittBold', $type-sans;
+
+$type-serif: serif;

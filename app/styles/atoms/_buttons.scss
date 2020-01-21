@@ -1,0 +1,28 @@
+// Buttons
+.button {
+  -webkit-appearance: none;
+  background-color: $color-yellow;
+  border: solid 2px $color-blue;
+  border-radius: 30px;
+  color: $color-blue;
+  display: inline-block;
+  font-family: $sansBold;
+  font-size: 21px;
+  height: auto;
+  letter-spacing: -.12px;
+  line-height: 1.33;
+  margin: 0;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  transition: background-color 300ms ease;
+  width: 100%;
+
+  @media (min-width: $screen-sm) {
+    max-width: 300px;
+  }
+
+  &:hover {
+    background-color: $color-teal;
+    color: $color-blue;
+  }
+}

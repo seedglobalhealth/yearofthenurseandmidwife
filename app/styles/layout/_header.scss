@@ -1,0 +1,29 @@
+.site-header {
+  background: $color-white;
+  padding: 5px 20px;
+  position: relative;
+  text-align: center;
+
+  @media (min-width: $screen-sm) {
+    display: none;
+  }
+}
+
+.site-logo {
+  text-align: center;
+
+  img {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 190px;
+
+    @media (min-width: $screen-sm) {
+      max-width: 285px;
+    }
+  }
+
+  .logo-text {
+    display: inline-block;
+    text-indent: -9999px;
+  }
+}

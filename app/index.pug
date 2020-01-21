@@ -1,0 +1,85 @@
+extends /_layouts/_main.pug
+
+block indexPage
+  - isHomePage = true;
+
+block content
+  section.splash-page
+    .splash-hero
+      h1.splash-hero__title
+        span.title 
+          strong Nurses 
+          | lead.
+        br
+        span.title 
+          strong Midwives 
+          | lead.
+    .splash-content
+      .content-wrapper
+        h1.site-logo 
+          img(src="../images/logo@3x.png", alt="2020 International Year of the Nurse and Midwife")
+          span.logo-text 2020 International Year of the Nurse and Midwife
+        p Nurses and midwives are leaders, navigators, innovators, and advocates. They are the backbone of health systems and on the frontlines of providing care to communities around the world.
+
+        p
+          strong This is where you’ll find stories from nurses and midwives on the front line throughout 2020. 
+
+        // Begin Mailchimp Signup Form
+        link(href='//cdn-images.mailchimp.com/embedcode/classic-10_7.css' rel='stylesheet' type='text/css')
+        style(type='text/css').
+          #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+          /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+          We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        #mc_embed_signup
+          form#mc-embedded-subscribe-form.validate(action='https://seedglobalhealth.us9.list-manage.com/subscribe/post?u=fd860e36f6893af5590c9dddb&id=d771b22250' method='post' name='mc-embedded-subscribe-form' target='_blank' novalidate='')
+            #mc_embed_signup_scroll
+              h2 Stay up-to-date and hear from nurses and midwives around the world.
+              .indicates-required
+                span.asterisk *
+                |  indicates required
+              .mc-field-group
+                label(for='mce-EMAIL')
+                  | Email Address (required)
+                  span.asterisk *
+                input#mce-EMAIL.required.email(type='email' value='' name='EMAIL')
+              .mc-field-group
+                label(for='mce-FNAME') First Name 
+                input#mce-FNAME(type='text' value='' name='FNAME')
+              .mc-field-group
+                label(for='mce-LNAME') Last Name 
+                input#mce-LNAME(type='text' value='' name='LNAME')
+              #mce-responses.clear
+                #mce-error-response.response(style='display:none')
+                #mce-success-response.response(style='display:none')
+              // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+              div(style='position: absolute; left: -5000px;' aria-hidden='true')
+                input(type='text' name='b_fd860e36f6893af5590c9dddb_d771b22250' tabindex='-1' value='')
+              .clear
+                input#mc-embedded-subscribe.button(type='submit' value='Sign Me Up' name='subscribe')
+        script(type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')
+        script(type='text/javascript').
+          (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);
+        // End mc_embed_signup
+
+
+        p Nurses and midwives are often undervalued, underpaid, and underrepresented in policy discussions and decisions. Despite this, they continue to save lives and lead and organize for change in health systems. That is why we’re glad the World Health Organization has declared 2020 the International Year of the Nurse and the Midwife.
+        p Did you know that nurses and midwives make up nearly half the global health workforce? Through their leadership, they can advance healthcare policy to reach universal health coverage.
+        p Spread the word using our 
+          a(href="https://spark.adobe.com/page/qz8J5jdIQXiPk/", target="_blank") Social Toolkit 
+          | and #NursesLead #MidwivesLead.
+        p 
+          strong Want to share a great story about a nurse or a midwife to be featured on our virtual spotlight wall? 
+            a(href="mailto:communications@seedglobalhealth.org") Submit it here.
+        p 
+          strong Stay tuned for more as we build this site.
+
+      footer.splash-content__footer
+        .footer-wrapper
+          img.seed-logo(src="/images/seed-logo.svg" alt="Seed Global Health logo")
+          p.emphasis in partnership with
+          hr
+          .footer-logos
+            img.logo-small(src="/images/frontline-hwc-logo.png" alt="Frontline Health Workers Coalition logo")
+            img(src="/images/partners-in-health-logo.png" alt="Partners in Health logo")
+            img(src="/images/intrahealth40_color.png" alt="IntraHealth International logo")
+            img(src="/images/nursing-now-logo.png" alt="Nursing Now logo")

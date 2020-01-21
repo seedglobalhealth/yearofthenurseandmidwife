@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer/condensed_blue" transform="translate(-393.000000, -310.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-4" transform="translate(248.000000, 310.000000)">
+                <path d="M161.5,0 C170.6388,0 178,7.3612 178,16.5 C178,25.6388 170.6388,33 161.5,33 C152.3612,33 145,25.6388 145,16.5 C145,7.3612 152.3612,0 161.5,0 Z M171.8125,20.1755605 L171.8125,12.8244395 C171.8125,12.8244395 171.8125,9.28125 168.25818,9.28125 L154.740607,9.28125 C154.740607,9.28125 151.1875,9.28125 151.1875,12.8244395 L151.1875,20.1755605 C151.1875,20.1755605 151.1875,23.71875 154.740607,23.71875 L168.25818,23.71875 C168.25818,23.71875 171.8125,23.71875 171.8125,20.1755605 Z M165.504219,16.5102754 L158.752102,20.4632708 L158.752102,12.556071 L165.504219,16.5102754 Z" id="Combined-Shape" style="fill: currentColor;"></path>
+            </g>
+        </g>
+    </g>
+</svg>

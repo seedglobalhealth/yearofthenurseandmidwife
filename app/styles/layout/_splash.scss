@@ -1,0 +1,267 @@
+// Splash Page layout
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-110%);
+    transform-origin: left;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.splash-page {
+  .site-logo {
+    display: none;
+
+    @media (min-width: $screen-sm) {
+      display: block;
+      margin-bottom: 55px;
+      text-align: left;
+    }
+  }
+}
+
+.splash-hero {
+  background-color: $color-black;
+  background-image: url('../images/jmp-8758.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 0 120%;
+  position: relative;
+  width: 100%;
+
+  @media (min-width: $screen-xs) {
+    padding: 0 0 65%;
+  }
+
+  @media (min-width: $screen-sm) {
+    background-image: url(../images/jmp-8758@2x.png);
+    background-position: center;
+    height: 100vh;
+    left: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 50%;
+  }
+
+  .splash-hero__title {
+    bottom: -30px;
+    color: $color-white;
+    font-family: $sansSemiBold;
+    font-size: 36px;
+    font-weight: 600;
+    left: 0;
+    line-height: normal;
+    position: absolute;
+    width: 100%;
+
+    @media (min-width: $screen-xs) {
+      bottom: -40px;
+      font-size: 45px;
+    }
+
+    @media (min-width: $screen-sm) {
+      bottom: 35px;
+    }
+
+    @media (min-width: $screen-md) {
+      bottom: 50px;
+      font-size: 60px;
+    }
+
+    .title {
+      animation: 1s ease-out 2s 1 slideInFromLeft;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      display: inline-block;
+      padding: 0 10px 0 20px;
+      position: relative;
+      transform: translateX(-100%);
+
+      @media (min-width: $screen-sm) {
+        padding-left: 40px;
+      }
+
+      @media (min-width: $screen-md) {
+        padding-left: 15%;
+      }
+
+      &::before {
+        background: $color-blue;
+        content: '';
+        height: 90%;
+        left: 0;
+        position: absolute;
+        top: -3px;
+        width: 100%;
+        z-index: -1;
+      }
+    }
+
+    .title + .title,
+    span:nth-of-type(2) {
+      animation-delay: 2.5s;
+    }
+
+    strong {
+      color: $color-teal;
+    }
+  }
+}
+
+.splash-content {
+  background-color: $color-white;
+  color: $color-blue;
+
+  @media (min-width: $screen-sm) {
+    margin-left: 50%;
+    width: 50%;
+  }
+
+  a {
+    background: transparent;
+    color: $color-blue;
+    cursor: pointer;
+    padding-left: 1px;
+    padding-right: 1px;
+    transition: background-color .25s ease;
+
+    &:hover,
+    &:focus {
+      background-color: $color-teal;
+      color: $color-blue;
+    }
+  }
+
+  .content-wrapper {
+    padding: 50px 15px 30px;
+
+    @media (min-width: $screen-sm) {
+      margin: 0 auto;
+      max-width: 85%;
+      padding: 50px 0 30px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin: 0 90px 0 100px;
+      max-width: 80%;
+    }
+  }
+}
+
+.splash-content__footer {
+  background: $color-pale-gray;
+  color: $color-charcoal;
+  padding: 45px 15px 50px;
+  text-align: center;
+
+  @media (min-width: $screen-sm) {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .footer-wrapper {
+    margin: 0 auto;
+    max-width: 475px;
+
+    @media (min-width: $screen-sm) {
+      max-width: 85%;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin: 0 90px 0 100px;
+      max-width: 80%;
+    }
+  }
+
+  .seed-logo {
+    @media (min-width: $screen-sm) {
+      display: inline-block;
+      margin: 0 45px 0 0;
+      vertical-align: middle;
+
+      + p {
+        display: inline-block;
+      }
+    }
+  }
+
+  p {
+    font-size: 14px;
+    letter-spacing: normal;
+    line-height: normal;
+
+    @media (min-width: $screen-sm) {
+      margin: 0;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto 25px;
+    max-height: 70px;
+    max-width: 150px;
+
+    &.logo-small {
+      max-height: 40px;
+    }
+
+    @media (min-width: $screen-sm) {
+      margin: 0;
+      max-width: 100%;
+    }
+  }
+
+  .footer-logos {
+    display: grid;
+    grid-gap: 30px;
+
+    @media (min-width: $screen-sm) {
+      align-items: center;
+      grid-gap: 75px 40px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $screen-md) {
+      grid-column-gap: 30px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        max-width: 20%;
+      }
+    }
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      columns: 2;
+      display: block;
+
+      img {
+        margin-bottom: 40px;
+      }
+    }
+
+    /* Microsoft Edge Browser 12+ (All) - @supports method */
+    @supports (-ms-ime-align:auto) {
+      columns: 2;
+      display: block;
+
+      img {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
